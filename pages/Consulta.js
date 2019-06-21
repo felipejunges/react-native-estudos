@@ -51,7 +51,7 @@ class Consulta extends Component {
     }
 
     onRefresh() {
-        this.props.navigation.goBack();
+        this.getMoviesFromApi();
     }
 
 	render() {
@@ -79,7 +79,7 @@ class Consulta extends Component {
                         <RefreshControl
                             refreshing={this.state.isLoading}
                             onRefresh={this.onRefresh.bind(this)} />
-                      }
+                    }
                     keyExtractor={({id}, index) => id} />
             </View>
         )
