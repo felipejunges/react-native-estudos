@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FlatList, ActivityIndicator, TouchableWithoutFeedback, TouchableHighlight, RefreshControl, View, Text } from 'react-native';
+import SoundPlayer from 'react-native-sound-player'
 
 class Consulta extends Component {
 
@@ -41,11 +42,16 @@ class Consulta extends Component {
     }
 
     actionOnRow(item) {
-        this.props.navigation.goBack();
+        try {
+            SoundPlayer.playSoundFile('slack', 'mp3')
+            //SoundPlayer.playUrl('https://example.com/music.mp3')
+        } catch (e) {
+            console.log(`cannot play the sound file`, e)
+        }
     }
 
     onRefresh() {
-
+        this.props.navigation.goBack();
     }
 
 	render() {
