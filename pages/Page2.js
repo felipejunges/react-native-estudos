@@ -12,13 +12,11 @@ Page2.navigationOptions = {
   headerRight: (
     <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', marginRight: 4 }}>
       <Button
-        style = {{ width: '40%', height: 40 }}
         onPress={() => alert('This is a button!')}
         title="Info"
         color="#ff9"
       />
       <Button
-        style = {{ width: '40%', height: 40 }}
         onPress={() => alert('This is another button!')}
         title="Info"
         color="#f9f"
