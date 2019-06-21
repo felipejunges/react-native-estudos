@@ -6,12 +6,12 @@ import Consulta from './Consulta'
 import { createAppContainer, createDrawerNavigator, createStackNavigator } from 'react-navigation';
 
 const Routes = createAppContainer(
-  createStackNavigator({
-    Home: Home,
-    About: About,
-    Geo: Geo,
-    Consulta: Consulta
-  })
+    createDrawerNavigator({
+        Home: Home,
+        About: About,
+        Geo: Geo,
+        Consulta: Consulta
+    })
 );
 
 export default Routes;

@@ -27,6 +27,7 @@ const Home = ({ navigation }) => (
 	
 	Home.navigationOptions = {
 		title: 'Home',
+		drawerLabel: 'Home'
 	}
 	
 	const styles = StyleSheet.create({

@@ -5,7 +5,8 @@ import SoundPlayer from 'react-native-sound-player'
 class Consulta extends Component {
 
 	static navigationOptions = {
-		title: 'Json!',
+        title: 'Json!',
+        drawerLabel: 'Consulta'
 	};
 
 	constructor() {

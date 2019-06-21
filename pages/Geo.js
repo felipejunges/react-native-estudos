@@ -5,6 +5,7 @@ class Geo extends Component {
 
 	static navigationOptions = {
 		title: 'Geowww!',
+		drawerLabel: 'Geo'
 	};
 
 	constructor() {
