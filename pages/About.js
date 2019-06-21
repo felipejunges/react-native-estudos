@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Button, Text } from 'react-native';
 
-const Page2 = () => (
+const About = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>About</Text>
   </View>
 );
 
-Page2.navigationOptions = {
+About.navigationOptions = {
   title: 'About',
   headerRight: (
     <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', marginRight: 4 }}>
@@ -28,4 +28,4 @@ Page2.navigationOptions = {
   },
 }
 
-export default Page2;
+export default About;

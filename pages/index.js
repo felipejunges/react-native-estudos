@@ -1,5 +1,5 @@
-import Page1 from './Page1';
-import Page2 from './Page2';
+import Home from './Home';
+import About from './About';
 import Geo from './Geo';
 import Consulta from './Consulta'
 
@@ -7,8 +7,8 @@ import { createAppContainer, createDrawerNavigator, createStackNavigator } from 
 
 const Routes = createAppContainer(
   createStackNavigator({
-    Home: Page1,
-    About: Page2,
+    Home: Home,
+    About: About,
     Geo: Geo,
     Consulta: Consulta
   })
