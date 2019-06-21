@@ -22,9 +22,39 @@ const Page1 = ({ navigation }) => (
 			
 		</TouchableHighlight>
 
-		<Button
-			title="Ir para Geo!"
-			onPress={() => navigation.navigate('Geo') }/>
+		<TouchableHighlight 
+			style ={{
+				height: 40,
+				width:160,
+				borderRadius:10,
+				backgroundColor : "yellow",
+				marginLeft :50,
+				marginRight:50,
+				marginTop :20
+			}}>
+
+			<Button
+				title="Ir para Geo!"
+				onPress={() => navigation.navigate('Geo') }/>
+
+		</TouchableHighlight>
+
+		<TouchableHighlight 
+			style ={{
+				height: 40,
+				width:160,
+				borderRadius:10,
+				backgroundColor : "yellow",
+				marginLeft :50,
+				marginRight:50,
+				marginTop :20
+			}}>
+
+			<Button
+				title="Consulta Json"
+				onPress={() => navigation.navigate('Consulta') }/>
+				
+		</TouchableHighlight>
 	</View>
 	);
 	
