@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, TouchableHighlight, Button, Text } from 'react-native';
 
-const Page1 = ({ navigation }) => (
+const Home = ({ navigation }) => (
 	<View style={{ flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
 		<Text>Home ;D</Text>
 	
@@ -25,7 +25,7 @@ const Page1 = ({ navigation }) => (
 	</View>
 	);
 	
-	Page1.navigationOptions = {
+	Home.navigationOptions = {
 		title: 'Home',
 	}
 	
@@ -41,4 +41,4 @@ const Page1 = ({ navigation }) => (
 		}
 	});
 	
-	export default Page1;
+	export default Home;
